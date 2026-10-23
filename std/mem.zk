@@ -1,0 +1,18 @@
+package Std
+
+class! Mem {
+    fn! alloc<O>() -> &O {
+        val ptr: &O
+        // just some palceholder stuff completely invalid
+        #llvm {
+            %buf = alloca i8, align 1
+            store i8 %c, i8* %buf, align 
+            ptr = malloc... stuff
+            i64 1
+            i8* %buf
+            i64 1
+        }
+
+        return ptr
+    }
+}

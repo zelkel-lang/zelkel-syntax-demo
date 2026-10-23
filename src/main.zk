@@ -1,0 +1,13 @@
+package ExampleProject
+
+require ExampleProject::endpoint
+
+fn! main() -> void {
+    println("Hello, world!")
+    Io::print("Hello with package\n")
+
+    val obj = Mem::alloc<MyClass>()
+    val post_endpoint = PostEndpoint::new("default")
+
+    return
+}

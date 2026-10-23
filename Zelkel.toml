@@ -1,0 +1,11 @@
+[package]
+name = "ExampleProject"
+version = "0.1.0"
+edition = "2026.10-dev"
+
+[std]
+io = true
+mem = false
+
+[dependencies]
+tcell = "1.0.0"

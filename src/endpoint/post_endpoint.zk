@@ -1,0 +1,9 @@
+package ExampleProject::endpoint
+
+class PostEndpoint {
+    val name: String
+
+    fn! new(self, name: String) :constr -> Self {
+        self.name = name
+    }
+}

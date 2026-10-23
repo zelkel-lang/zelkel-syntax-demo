@@ -1,0 +1,16 @@
+package Std
+
+class! Io {
+    fn! println(content: String, ...) -> void {
+        #llvm {
+            %buf = alloca i8, align 1
+            store i8 %c, i8* %buf, align 
+            i64 1
+            i64 1
+            i8* %buf
+            i64 1
+        }
+
+        return
+    }
+}
