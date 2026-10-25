@@ -1,13 +1,58 @@
 package ExampleProject
 
-require ExampleProject::endpoint
+require { PostEndpoint } from ExampleProject::endpoint
+
+class MyClass {
+    val field: i64
+    
+    fn! new(self, field: i64) :constr -> Self {
+        self.field = field
+    }
+
+    fn! public_func(self) {
+        private_func()
+    }
+
+    fn private_func() {
+        println("private function!! :omg:")
+    }
+}
+
+enum Level {
+    One,
+    Two,
+    Three,
+    Four,
+    Five,
+}
 
 fn! main() -> void {
     println("Hello, world!")
-    Io::print("Hello with package\n")
 
-    val obj = Mem::alloc<MyClass>()
-    val post_endpoint = PostEndpoint::new("default")
+    if condition == true {
+        do_stuff()
+    }
+
+    val result: i64 = if condition == true {
+        0
+    } else {
+        1
+    }
+
+    val enum = Level::Three
+    val level_str: i64 = match enum {
+        Level::One => "one",
+        Level::Two => "two",
+        Level::Three => "three",
+        Level::Four => "four",
+        _ => "five or more",
+    }
+
+    val obj = Mem::alloc<MyClass>() // allocate a class with manually memory management
+    val post_endpoint = PostEndpoint::new("default") // use garbage collector
+    val my_class = MyClass::new(123) // use garbage collector
+
+    my_class.public_func()
 
     return
 }
