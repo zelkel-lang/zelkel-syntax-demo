@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "example_project",
+    "std"
+]
+
+[dependencies]
+shared-dep = "2.0.0"

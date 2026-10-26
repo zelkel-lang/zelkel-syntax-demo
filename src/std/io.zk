@@ -1,4 +1,4 @@
-package Std
+package std
 
 class! Io {
     fn! println(content: String, ...) -> void {

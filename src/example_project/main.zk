@@ -1,6 +1,6 @@
-package ExampleProject
+package example_project
 
-require { PostEndpoint } from ExampleProject::endpoint
+require { PostEndpoint } from example_project::endpoint
 
 class MyClass {
     val field: i64

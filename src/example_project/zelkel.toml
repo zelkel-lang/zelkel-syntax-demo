@@ -1,5 +1,5 @@
 [package]
-name = "ExampleProject"
+name = "example_project"
 version = "0.1.0"
 edition = "2026.10-dev"
 
@@ -8,4 +8,4 @@ io = true
 mem = false
 
 [dependencies]
-tcell = "1.0.0"
+example = "1.0.0"

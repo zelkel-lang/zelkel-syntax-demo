@@ -1,4 +1,4 @@
-package ExampleProject::endpoint
+package example_project::endpoint
 
 class PostEndpoint {
     val name: String
